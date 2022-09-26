@@ -15,7 +15,7 @@ Users should be able to:
 ![desktop-resolution: ](<./images/screenshot(mobile-resolution).png>)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://lanzavecchia-4-card-feature-section.netlify.app/)
+- Live Site URL: [Live site URL](https://lanzavecchia-4-card-feature-section.netlify.app/)
 
 ### Built with
 
