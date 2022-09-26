@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+body{
+ margin: 0;
+ padding: 0;
+font-family: 'Poppins', sans-serif;
+font-size: 0.9375rem;
+box-sizing: border-box;
+color: var(--VeryDarkBlue);
+background-color: var(--VeryLightGray);
+}
+
+.container{
+ margin: 5.625rem  1.875rem;
+
+}
+
+/* -------------HEADER--------------- */
+
+header{
+ text-align: center;
+}
+
+header h1{
+ font-weight: 200;
+ font-size: 1.6rem;
+
+ margin: 0;
+}
+
+header h2 {
+ font-weight: 600;
+ font-size: 1.6rem;
+ margin: 0;
+}
+
+header p {
+ font-size: 1.05rem;
+ color: var(--GrayishBlue);
+ margin-bottom: 4.375rem;
+}
+
+/* -------------CARDS CONTAINER--------------- */
+
+.cardsContainer{
+ max-width: 31.25rem;
+ margin: 0 auto;
+}
+
+/* -------------CARDS--------------- */
+
+.cards{
+ border-radius: 6%;
+ background-color: var(--VeryLightGray);
+ box-shadow: 0.1875rem 0.625rem 0.625rem var(--GrayishBlue);
+ margin-bottom: 1.875rem;
+ min-width: 19.375rem;
+ max-width: 31.25rem;
+ height: 13.875rem;
+ overflow: hidden;
+}
+
+.card1 .line{
+ background-color: var(--Cyan);
+ height: 0.25rem;
+}
+.card2 .line {
+ background-color: var(--Red);
+ height: 0.25rem;
+}
+.card3 .line {
+ background-color: var(--Orange);
+ height: 0.25rem;
+}
+.card4 .line {
+ background-color: var(--Blue);
+ height: 0.25rem;
+}
+
+.content{
+ padding: 1.875rem;
+}
+
+.content h3{
+ margin-top: 0;
+}
+
+.content p{
+ color: var(--GrayishBlue);
+ font-size: 0.89rem;
+ margin: -0.9375rem 0 1.875rem 0;
+}
+
+.image{
+ text-align: right;
+}
+
+/* -------------FOOTER--------------- */
+.attribution {
+ font-size: 0.6875rem;
+ text-align: center;
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%);
+}
+
+/* -------------600px--------------- */
+
+@media only screen and (min-width:600px) {
+ header{
+  max-width: 32.8125rem;
+  margin:0 auto;
+ }
+ header h1{
+  font-size: 2.5rem;
+ }
+ header h2 {
+  font-size: 2.5rem;
+ }
+}
+
+/* -------------780px--------------- */
+
+@media only screen and (min-width:780px) {
+ .cardsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.875rem;
+  max-width: 56.25rem;
+ }
+.middleCards{
+ grid-column: 2/3;
+ grid-row: 1/3;
+}
+}
+
+/* -------------1175px--------------- */
+
+@media only screen and (min-width:1175px) {
+.cardsContainer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ max-width: 1200px;
+}
+
+.cards{
+ width: 22.1875rem;
+ height: 15.875rem;
+}
+
+}
