@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturateblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Darkcyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    background-image:url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg) ;
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh ;
+}
+
+.cardContainer{
+    margin: 7.5rem auto 3.125rem;
+    width: 20.625rem;
+    height: 23.75rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    position: relative;
+}
+.cardBackground{
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 8.75rem;
+}
+
+
+.profileImage{
+    position: absolute;
+    top: 5.4375rem;
+    left: 35%;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    height: 6rem;
+}
+
+.personalInfo{
+    background-color: white;
+    height: 9.375rem;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.name{
+    font-weight: 700;
+    color: var(--Verydarkdesaturateblue);
+}
+
+.age ,.city{
+    color: var(--Darkgray);
+}
+.city{
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.mediaInfo{
+    background-color: white;
+    border-top: 1px solid var(--Darkgray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.statistics{
+    text-align: center;
+    margin-top: -1.5625rem;
+}
+.statistics h4{
+    color: var(--Verydarkdesaturateblue);
+
+}
+
+.statistics p{
+    margin-top: -1.5625rem;
+    font-size: 0.7rem;
+    color: var(--Darkgray);
+    letter-spacing: 0.125rem;
+}
+
+/* ---------------FOOTER--------------- */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width:1440px){
+    .cardContainer{
+        width: 390px;
+        
+    }
+}
