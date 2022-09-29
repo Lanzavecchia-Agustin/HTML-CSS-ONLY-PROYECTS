@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--LigthCyan:hsl(179, 62%, 58%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    background-color: var(--LightGray);
+}
+
+.container{
+    margin: 4.375rem auto 4.375rem ;
+    width: 19.5625rem;
+    height: 45.625rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+/*-----------------------JOIN----------------------------*/
+
+
+.join{
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    height: 270px;
+    box-sizing: border-box;
+}
+.join h2{
+    color: var(--Cyan); 
+    margin: 1.5625rem 0 0.625rem 0;
+}
+.join h4{
+    color: var(--BrightYellow);
+}
+.join p{
+    color: var(--GrayishBlue );
+    font-size: 0.86rem;
+    line-height: 1.6875rem;
+    margin-top: 1rem;
+}
+
+/*-----------------------SUBSCRIPTION----------------------------*/
+
+
+.subscription{
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: var(--Cyan);
+    color: white;
+    height: 14.375rem;
+    box-sizing: border-box;
+}
+.subscription p h2,.month{
+    color: var(--LightGray);
+}
+
+.price{
+    font-weight: 700;
+    font-size:2rem;
+}
+
+.btn{
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0.875rem;
+    border-radius: 0.5rem;
+    background-color: var(--BrightYellow);
+    border:none;
+    color: white;
+    font-weight: 700;
+}
+
+/*-----------------------WHY US----------------------------*/
+
+.whyUs{
+    background-color:var(--LigthCyan) ;
+    height: 14.375rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+ li{
+    list-style: none;
+    color: var(--LightGray);
+    margin-left: -40px;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.whyUs h4{
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+}
+
+/*-----------------------FOOTER----------------------------*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*-----------------DESKTOP RESOLUTION----------------*/
+
+
+@media only screen and (min-width:680px){
+    .container{
+        width: 39.75rem;
+        height: 29.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 7.5rem auto 6.25rem;
+    }
+    .join{
+        grid-column: 1/3;
+        padding: 1.25rem 2.1875rem 2.1875rem 2.1875rem;
+        height: 218px;
+    }
+    .join h2{
+        font-size: 1.55rem;
+    }
+
+    .join h4{
+        font-size: 1.2rem;
+    }
+
+    .join p{
+        font-size: 1rem;
+        line-height: 1.6875rem;
+        margin-top: 0.5rem;
+    }
+
+    .subscription h2{
+        font-size: 1.1rem;
+    }
+    .subscription p{
+        font-size: 0.98rem;
+    }
+
+    .subscription, .whyUs{
+        padding: 20px 40px 40px 40px;
+        height: 16.125rem;
+    }
+}
